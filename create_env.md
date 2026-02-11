@@ -7,14 +7,17 @@
 まずは Python の実行環境を整えます。リポジトリのルートで実行してください。
 
 ```zsh
+# Pythonのインストール
+brew install python@3.13
+
 # 仮想環境の作成
-python3 -m venv .venv
+python3.13 -m venv .venv
 
 # 仮想環境の有効化
 source .venv/bin/activate
 
 # pip自体のアップグレード
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 
 # 必要なライブラリのインストール
 - google-genai: Gemini API を叩くための最新SDK
